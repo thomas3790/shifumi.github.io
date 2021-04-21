@@ -1,0 +1,322 @@
+@font-face {
+  font-family: 'Comica BD Bold';
+  src: url('../font/ComicaBDBold.ttf');
+}
+@font-face {
+  font-family: 'Score board';
+  src: url('../font/scoreboard.ttf');
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#mainMenu {
+    background-image: url(../img/fond.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+#logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+#play {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 15%;
+    line-height: 0;
+    cursor: default;
+    background-color: #fbee06;
+    border: solid 3px black;
+    border-radius: 20px;
+    font-family: 'Comica BD';
+    font-weight: bold;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 5vw;
+}
+#boxe {
+    background-image: url(../img/boxe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#level2 {
+    background-image: url(../img/hante.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#level3 {
+    background-image: url(../img/jungle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#level4 {
+    background-image: url(../img/univers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#start {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 15%;
+    line-height: 0;
+    cursor: default;
+    background-color: #fbee06;
+    border: solid 3px black;
+    border-radius: 20px;
+    font-family: 'Comica BD';
+    font-weight: bold;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 2vh;
+}
+.cadenas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+}
+.choiceTheme {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    font-family: 'Comica BD';
+    font-weight: bold;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 4vw;
+}
+
+
+
+
+
+  
+  h3 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    width: 70%;
+    height: 40%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    overflow: hidden;
+  }
+  .carousel-wrapper .carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 70%;
+  }
+  .carousel-wrapper .carousel .carousel-cell {
+    padding: 10px;
+    background-color: #FFFFFF;
+    width: 30%;
+    height: 100%;
+    min-width: 120px;
+    margin: 0 40px;
+    transition: transform 500ms ease;
+    border: solid 3px white;
+    border-radius: 20px;
+  }
+
+
+  .carousel-wrapper .carousel .carousel-cell.is-selected {
+    transform: scale(1.2);
+  }
+
+
+  .carousel-wrapper .flickity-page-dots {
+    display: none;
+  }
+  .carousel-wrapper .flickity-viewport, .carousel-wrapper .flickity-slider {
+    overflow: visible;
+  }
+
+
+
+
+/* Ajout de la partie game */
+#game {
+  background-image: url(../img/autrering.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+#backtoMenu {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 4%;
+  height: auto;
+}
+.tutoImage {
+  max-width: 50%;
+  height: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 20vw);
+  grid-template-rows: auto;
+  margin: 0;
+  padding: 0;
+}
+.versus{
+  grid-column: 3;
+  grid-row: 1 / 4;
+  margin: auto 0; 
+  /* Si le margin a 4 valeurs (ex: margin: 1 2 3 4), le 1 = top, le 2 = right, le 3 = bottom, le 4 = left */
+  /* Si le margin a 2 valeurs (ex: margin: 1 2), le 1 = axe y, le 2 = axe x */
+  /* Si le margin a 1 valeur (ex: margin: 1), le 1 = tout le tour */
+}
+#redFist{
+  grid-column: 1;
+  grid-row: 1;
+}
+#blueFist{
+  grid-column: 5;
+  grid-row: 1;
+}
+#redPaper{
+  grid-column: 1;
+  grid-row: 2;
+}
+.checkImage1{
+  background-color: #c2c2c2a8;
+  border-radius: 50%;
+  grid-column: 2;
+  grid-row: 2;
+  width: 90%;
+  margin: 0 auto;
+}
+.checkImage2{
+  background-color: #c2c2c2a8;
+  border-radius: 50%;
+  grid-column: 4;
+  grid-row: 2;
+  width: 90%;
+  margin: 0 auto;
+}
+#bluePaper{
+  grid-column: 5;
+  grid-row: 2;
+}
+#redCisors{
+  grid-column: 1;
+  grid-row: 3;
+}
+#blueCisors{
+  grid-column: 5;
+  grid-row: 3;
+}
+.imageGame{
+  width: 100%;
+}
+#containerResult {
+  grid-column: 3;
+  grid-row: 3;
+  align-self: center;
+}
+#result{
+  text-align: center;
+  align-self: center;
+  font-family: 'Comica BD';
+  font-weight: bold;
+  text-shadow: white 0.1em 0.1em 0.2em;
+  font-size: 3.5vw;
+}
+
+/*Fin Partie Thomas*/
+/* partie jenn */
+
+.containerParent {
+  font-family: 'Score board';
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: auto;
+  text-align: center;
+  width: 100%;
+}
+
+#one, #four {
+  background-color: #EF2222;
+}
+#two, #five {
+  background-color: #000000;
+}
+#three, #six {
+  background-color: #080DA9;
+}
+#containerEnfant1, #containerEnfant3 {
+  background-color: #000000;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 0.5em;
+  color:#EF2222;
+  font-size: 1.5vw;
+}
+
+#containerEnfant4, #containerEnfant6 {
+  background-color: #000000;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  color: #FEF200;
+  font-size: 1.5vw;
+}
+#containerEnfant2 {
+  margin-top: 0.2em;
+  color: #FEF200;
+  font-size: 1.5vw;
+}
+#containerEnfant5 {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  margin-left: 2em;
+  margin-right: 2em;
+  color:#EF2222;
+  font-size: 1.5vw;
+}
+
+/* bordures du tableau */
+#one {
+  border-top-left-radius: 5px;
+}
+#four {
+  border-bottom-left-radius: 5px;
+}
+#three {
+  border-top-right-radius: 5px;
+}
+#six {
+  border-bottom-right-radius: 5px;
+}
+
+
+
+
